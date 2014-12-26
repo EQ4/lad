@@ -1,0 +1,6 @@
+[submodule "sord"]
+	path = sord
+	url = https://github.com/ventosus/sord.git
+[submodule "serd"]
+	path = serd
+	url = https://github.com/ventosus/serd.git
