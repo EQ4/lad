@@ -61,7 +61,7 @@ def configure(conf):
     autowaf.configure(conf)
     autowaf.set_recursive()
 
-    autowaf.check_pkg(conf, 'lv2', atleast_version='1.8.0', uselib_store='LV2')
+    autowaf.check_pkg(conf, 'lv2', atleast_version='1.11.0', uselib_store='LV2')
 
     # I have no idea why this is necessary
     conf.env.CXXFLAGS += ['-I%s/raul' % os.path.abspath(top)]
