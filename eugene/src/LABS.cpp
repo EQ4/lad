@@ -119,4 +119,3 @@ LABS::optimum() const
 }
 
 } // namespace eugene
-

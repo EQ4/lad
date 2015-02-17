@@ -123,4 +123,3 @@ TSP::evaluate(const GeneType& g) const
 }
 
 } // namespace eugene
-

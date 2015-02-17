@@ -333,4 +333,3 @@ LaunchpadImpl::setButton(ButtonID id, uint8_t velocity)
 		break;
 	}
 }
-

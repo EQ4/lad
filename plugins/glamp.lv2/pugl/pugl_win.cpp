@@ -80,7 +80,7 @@ puglCreate(PuglNativeWindow parent,
 		free(view);
 		return NULL;
 	}
-		
+
 	SetWindowLongPtr(impl->hwnd, GWL_USERDATA, (LONG)view);
 
 	impl->hdc = GetDC(impl->hwnd);

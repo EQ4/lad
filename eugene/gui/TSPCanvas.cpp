@@ -80,4 +80,3 @@ TSPCanvas::update(const TSP::GeneType& best)
 
 } // namespace GUI
 } // namespace eugene
-
