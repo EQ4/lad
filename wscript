@@ -47,7 +47,7 @@ def options(opt):
                    help='Command to run from build directory (for run command)')
     for i in projects:
         opt.recurse(i)
-        
+
 def sub_config_and_use(conf, name, has_objects = True, pkgname = ''):
     conf.recurse(name)
     if pkgname == '':
