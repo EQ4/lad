@@ -124,8 +124,8 @@ MachinaCanvas::on_new_object(SPtr<client::ClientObject> object)
 		} else {
 			int scroll_x, scroll_y;
 			get_scroll_offsets(scroll_x, scroll_y);
-			x = scroll_x + 64.0;
-			y = scroll_y + 64.0;
+			x = scroll_x + 128.0;
+			y = scroll_y + 128.0;
 		}
 
 		NodeView* view = new NodeView(_app->window(), *this, object, x, y);

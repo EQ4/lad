@@ -48,9 +48,9 @@ namespace gui {
 
 inline static uint32_t edge_color(float prob)
 {
-	static const uint32_t min = 0xFF4444C0;
-	static const uint32_t mid = 0xFFFF44C0;
-	static const uint32_t max = 0x44FF44C0;
+	static const uint32_t min = 0xFF4444FF;
+	static const uint32_t mid = 0xFFFF44FF;
+	static const uint32_t max = 0x44FF44FF;
 
 	if (prob <= 0.5) {
 		return UINT_INTERPOLATE(min, mid, prob * 2.0);
@@ -67,7 +67,7 @@ EdgeView::EdgeView(Canvas&                             canvas,
                    NodeView*                           src,
                    NodeView*                           dst,
                    SPtr<machina::client::ClientObject> edge)
-	: Ganv::Edge(canvas, src, dst, 0x9FA0A0F4, true, false)
+	: Ganv::Edge(canvas, src, dst, 0x9FA0A0FF, true, false)
 	, _edge(edge)
 {
 	set_color(edge_color(probability()));
