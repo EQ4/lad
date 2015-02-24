@@ -1,9 +1,11 @@
 fomp (1.0.1) unstable;
 
   * Fix phaser plugin data and list phasers in manifest
+  * Fix port symbol for MVCLPF4 input gain
+    (technically breaks state compatibility, but old symbol was an oversight)
   * Add reverb and reverb_amb
 
- -- David Robillard <d@drobilla.net>  Mon, 05 May 2014 11:42:01 +0200
+ -- David Robillard <d@drobilla.net>  Mon, 23 Feb 2015 19:45:40 -0500
 
 fomp (1.0.0) stable;
 
