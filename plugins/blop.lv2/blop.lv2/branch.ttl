@@ -3,6 +3,8 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix lv2: <http://lv2plug.in/ns/lv2core#> .
 @prefix morph: <http://lv2plug.in/ns/ext/morph#> .
+@prefix opts: <http://lv2plug.in/ns/ext/options#> .
+@prefix urid: <http://lv2plug.in/ns/ext/urid#> .
 
 blop:branch
 	a lv2:Plugin ,
@@ -11,7 +13,9 @@ blop:branch
 	lv2:symbol "branch" ;
 	lv2:microVersion 0 ;
 	lv2:minorVersion 0 ;
-	lv2:optionalFeature lv2:hardRTCapable ;
+	lv2:extensionData opts:interface ;
+	lv2:optionalFeature lv2:hardRTCapable ,
+		urid:map ;
 	lv2:port [
 		a lv2:ControlPort ,
 			lv2:InputPort ,
